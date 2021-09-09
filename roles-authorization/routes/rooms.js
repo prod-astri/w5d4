@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const Room = require('../models/Room');
-const { loginCheck } = require('./middlewares');
+// const { loginCheck } = require('./middlewares');
 
 
 router.get('/', (req, res, next) => {
@@ -11,7 +11,7 @@ router.get('/add', (req, res, next) => {
 	res.render('rooms/add');
 });
 
-router.post('/', loginCheck(), (req, res, next) => {
+router.post('/', (req, res, next) => {
 	// TODO
 });
 
